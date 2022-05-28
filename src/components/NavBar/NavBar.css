@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    padding: 1rem .5rem;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+nav ul li {
+    list-style-type: none;
+    flex: 1;
+    background-color: #461fd1;
+    border-radius: 5px;
+    padding: 1rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav ul li a {
+    font-size: .8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+
+}
