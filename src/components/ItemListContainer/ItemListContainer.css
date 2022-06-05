@@ -1,0 +1,17 @@
+.lista-productos ul {
+    display: flex;
+}
+
+.lista-productos ul li {
+    flex: 1;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.lista-productos img {
+    max-width: 300px;
+}
