@@ -16,7 +16,7 @@ nav ul {
     gap: 5px;
 }
 
-nav ul li {
+.nav-link {
     list-style-type: none;
     flex: 1;
     background-color: #461fd1;
@@ -25,10 +25,6 @@ nav ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
-
-nav ul li a {
     font-size: .8rem;
     text-decoration: none;
     text-transform: uppercase;

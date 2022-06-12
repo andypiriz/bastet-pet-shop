@@ -1,8 +1,8 @@
-.lista-productos ul {
+.products-list ul {
     display: flex;
 }
 
-.lista-productos ul li {
+.products-list ul li {
     flex: 1;
     list-style-type: none;
     display: flex;
@@ -12,6 +12,6 @@
     gap: 2rem;
 }
 
-.lista-productos img {
+.products-list img {
     max-width: 300px;
 }
