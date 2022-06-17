@@ -10,8 +10,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-      <ItemListContainer greeting='Bastet Pet Shop' />
-      <ItemDetailContainer />
       <BrowserRouter>
         <Navbar />
         <Routes>

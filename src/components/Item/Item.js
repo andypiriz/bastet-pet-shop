@@ -1,12 +1,14 @@
 import './Item.css'
+import { Link } from 'react-router-dom'
 
-const Item = ({ name, img }) => {
+const Item = ({ id, name, price, img }) => {
     return (
-        <li>
+        <div className='ProductCard'>
             <img src={img} alt={name} />
-            {name}
-            <button className='ver-mas-btn'>Ver más</button>
-        </li>
+            <h3>{name}</h3>
+            <p>${price}</p>
+            <Link className='BtnPrimary' to={`/detail/${id}`}>Ver detalle</Link>
+        </div>
     )
 }
 

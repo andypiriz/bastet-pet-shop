@@ -1,0 +1,11 @@
+.ProductDetail {
+    padding: 3rem;
+    display: flex;
+}
+
+.ProductDetail div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}

@@ -7,16 +7,24 @@
 
 nav {
     padding: 1rem .5rem;
+    display: flex;
+    align-items: center;
 }
 
-nav ul {
+nav div {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    gap: 5px;
+    gap: 10px;
+    padding: 0px 15px;
 }
 
-.nav-link {
+nav img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.Option {
     list-style-type: none;
     flex: 1;
     background-color: #461fd1;
@@ -31,4 +39,20 @@ nav ul {
     font-weight: bold;
     color: #ffffff;
 
+}
+
+.ActiveOption {
+    list-style-type: none;
+    flex: 1;
+    border: solid 3px #461fd1;
+    border-radius: 5px;
+    padding: 1rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #461fd1;
 }

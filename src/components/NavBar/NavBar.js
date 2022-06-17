@@ -1,16 +1,19 @@
 import '../NavBar/NavBar.css'
+import { Link, NavLink } from 'react-router-dom'
 const Navbar = () => {
     return (
         <nav>
-            <ul>
-                <li><a href="">Gatos</a></li>
-                <li><a href="">Perros</a></li>
-                <li><a href="">Peces</a></li>
-                <li><a href="">Aves</a></li>
-                <li><a href="">Reptiles</a></li>
-                <li><a href="">Pequeñas mascotas</a></li>
-                <li><a href="">Contacto</a></li>
-            </ul>
+            <Link to='/'>
+                <img src='images/logo-bastet.jpg' alt='logo' />
+            </Link>
+            <div>
+                <NavLink to='/category/gatos' className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Gatos</NavLink>
+                <NavLink to='/category/perros' className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Perros</NavLink>
+                <NavLink to='/category/peces' className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Peces</NavLink>
+                <NavLink to='/category/aves' className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Aves</NavLink>
+                <NavLink to='/category/otros' className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Otros</NavLink>
+            </div>
+
         </nav>
     )
 }

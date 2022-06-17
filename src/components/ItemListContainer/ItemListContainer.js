@@ -33,7 +33,12 @@ const ItemListContainer = (props) => {
     }, [categoryId])
 
     if (loading) {
-        return <h1>Cargando...</h1>
+        return <div>
+            <h1>Cargando...</h1>
+            <img src='images/loading.gif' alt='loading' />
+        </div>
+
+
     }
 
     return (
