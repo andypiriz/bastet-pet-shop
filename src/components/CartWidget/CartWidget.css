@@ -1,0 +1,16 @@
+.CartWidget {
+    list-style-type: none;
+    flex: 1;
+    background-color: #461fd1;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+
+}

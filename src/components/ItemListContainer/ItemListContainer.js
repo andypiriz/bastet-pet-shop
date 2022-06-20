@@ -35,7 +35,6 @@ const ItemListContainer = (props) => {
     if (loading) {
         return <div>
             <h1>Cargando...</h1>
-            <img src='images/loading.gif' alt='loading' />
         </div>
 
 

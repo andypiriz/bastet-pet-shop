@@ -1,20 +1,15 @@
-.ProductDetail {
+.CounterContainer {
     display: flex;
-    padding: 2rem;
-    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
-.ProductDetail img {
-    width: 100%;
-    max-width: 600px;
-}
-
-.ProductDetail div:nth-child(2) {
+.CounterBtn {
+    flex: 1;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .BtnPrimary {
@@ -30,4 +25,12 @@
     border: none;
     text-decoration: none;
     cursor: pointer;
+}
+
+.BtnPrimary img {
+    max-width: 24px;
+}
+
+.AddToCartBtn button {
+    padding: .8rem 3rem;
 }
