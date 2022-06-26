@@ -1,5 +1,3 @@
-
-
 import './ItemDetail.css'
 import { useState, useContext } from 'react'
 import ItemCount from '../ItemCount/ItemCount'
