@@ -10,7 +10,6 @@ const ItemDetail = ({ id, name, img, description, price, stock }) => {
     const { addItem } = useContext(CartContext)
 
     const handleOnAdd = (quantity) => {
-        console.log(`se agregaron ${quantity} ${name}`)
         addItem({ id, name, price, quantity })
         setQuantityAdded(quantity)
     }
@@ -24,17 +23,17 @@ const ItemDetail = ({ id, name, img, description, price, stock }) => {
             </div>
             <div>
                 <div>
-                    <h2 className="ItemHeader">
+                    <h2>
                         {name}
                     </h2>
-                    <p className="Info">
+                    <p>
                         Descripción: {description}
                     </p>
-                    <p className="Info">
+                    <p>
                         Precio: ${price}
                     </p>
                 </div>
-                <div className='ItemFooter'>
+                <div>
                     {quantityAdded === 0
                         ? <ItemCount stock={stock} onAdd={handleOnAdd} />
                         : <Link className='BtnPrimary' to='/cart'>Finalizar compra</Link>

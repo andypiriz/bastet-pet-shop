@@ -25,10 +25,10 @@ const ItemListContainer = (props) => {
             })
             setProducts(productsFormatted)
         }).catch(error => {
+            console.log(error)
         }).finally(() => {
             setLoading(false)
         })
-
 
     }, [categoryId])
 
@@ -42,7 +42,7 @@ const ItemListContainer = (props) => {
 
     return (
         <div>
-            <h1>{props.greeting}</h1>
+
             {products.length > 0
                 ? <ItemList products={products} />
                 : <h1>Lo sentimos, no hay productos de la categoría seleccionada</h1>
