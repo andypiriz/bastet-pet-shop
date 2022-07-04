@@ -1,0 +1,21 @@
+button {
+    background-color: crimson;
+    padding: 10px 15px;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.CartItemContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    background-color: #461fd133;
+
+}
+
+.CartItemContainer div {
+    flex: 1;
+}
